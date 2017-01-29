@@ -2895,7 +2895,7 @@
       </tr>
       <tr>
         <td id="L482" class="blob-num js-line-number" data-line-number="482"></td>
-        <td id="LC482" style="background-color: rgb(234, 255, 234);" class="blob-code blob-code-inner js-file-line">
+        <td id="LC482" style="background-color: rgb(248, 238, 199);" style="background-color: rgb(234, 255, 234);" class="blob-code blob-code-inner js-file-line">
 </td>
       </tr>
       <tr>
@@ -6832,7 +6832,7 @@
       </tr>
       <tr>
         <td id="L1434" class="blob-num js-line-number" data-line-number="1434"></td>
-        <td id="LC1434" style="background-color: rgb(234, 255, 234);" class="blob-code blob-code-inner js-file-line">
+        <td id="LC1434" style="background-color: rgb(248, 238, 199);" style="background-color: rgb(234, 255, 234);" class="blob-code blob-code-inner js-file-line">
 </td>
       </tr>
       <tr>
@@ -9466,7 +9466,7 @@
       </tr>
       <tr>
         <td id="L2067" class="blob-num js-line-number" data-line-number="2067"></td>
-        <td id="LC2067" style="background-color: rgb(234, 255, 234);" class="blob-code blob-code-inner js-file-line">
+        <td id="LC2067" class="blob-code blob-code-inner js-file-line">
 </td>
       </tr>
       <tr>
@@ -15808,97 +15808,97 @@
       </tr>
       <tr>
         <td id="L3596" class="blob-num js-line-number" data-line-number="3596"></td>
-        <td id="LC3596" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">//</span> If the instruction can be easily simplified then do so now in preference</span></td>
+        <td id="LC3596" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">//</span> If the instruction can be easily simplified then do so now in preference</span></td>
       </tr>
       <tr>
         <td id="L3597" class="blob-num js-line-number" data-line-number="3597"></td>
-        <td id="LC3597" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">//</span> to value numbering it.  Value numbering often exposes redundancies, for</span></td>
+        <td id="LC3597" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">//</span> to value numbering it.  Value numbering often exposes redundancies, for</span></td>
       </tr>
       <tr>
         <td id="L3598" class="blob-num js-line-number" data-line-number="3598"></td>
-        <td id="LC3598" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">//</span> example if it determines that %y is equal to %x then the instruction</span></td>
+        <td id="LC3598" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">//</span> example if it determines that %y is equal to %x then the instruction</span></td>
       </tr>
       <tr>
         <td id="L3599" class="blob-num js-line-number" data-line-number="3599"></td>
-        <td id="LC3599" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">//</span> "%z = and i32 %x, %y" becomes "%z = and i32 %x, %x" which we now simplify.</span></td>
+        <td id="LC3599" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">//</span> "%z = and i32 %x, %y" becomes "%z = and i32 %x, %x" which we now simplify.</span></td>
       </tr>
       <tr>
         <td id="L3600" class="blob-num js-line-number" data-line-number="3600"></td>
-        <td id="LC3600" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">const</span> DataLayout &amp;DL = I-&gt;<span class="pl-c1">getModule</span>()-&gt;<span class="pl-c1">getDataLayout</span>();</td>
+        <td id="LC3600" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">const</span> DataLayout &amp;DL = I-&gt;<span class="pl-c1">getModule</span>()-&gt;<span class="pl-c1">getDataLayout</span>();</td>
       </tr>
       <tr>
         <td id="L3601" class="blob-num js-line-number" data-line-number="3601"></td>
-        <td id="LC3601" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span> (Value *V = <span class="pl-c1">SimplifyInstruction</span>(I, DL, TLI, DT, AC)) {</td>
+        <td id="LC3601" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span> (Value *V = <span class="pl-c1">SimplifyInstruction</span>(I, DL, TLI, DT, AC)) {</td>
       </tr>
       <tr>
         <td id="L3602" class="blob-num js-line-number" data-line-number="3602"></td>
-        <td id="LC3602" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">    I-&gt;<span class="pl-c1">replaceAllUsesWith</span>(V);</td>
+        <td id="LC3602" class="blob-code blob-code-inner js-file-line">    I-&gt;<span class="pl-c1">replaceAllUsesWith</span>(V);</td>
       </tr>
       <tr>
         <td id="L3603" class="blob-num js-line-number" data-line-number="3603"></td>
-        <td id="LC3603" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (MD &amp;&amp; V-&gt;<span class="pl-c1">getType</span>()-&gt;<span class="pl-c1">getScalarType</span>()-&gt;<span class="pl-c1">isPointerTy</span>())</td>
+        <td id="LC3603" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (MD &amp;&amp; V-&gt;<span class="pl-c1">getType</span>()-&gt;<span class="pl-c1">getScalarType</span>()-&gt;<span class="pl-c1">isPointerTy</span>())</td>
       </tr>
       <tr>
         <td id="L3604" class="blob-num js-line-number" data-line-number="3604"></td>
-        <td id="LC3604" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">      MD-&gt;<span class="pl-c1">invalidateCachedPointerInfo</span>(V);</td>
+        <td id="LC3604" class="blob-code blob-code-inner js-file-line">      MD-&gt;<span class="pl-c1">invalidateCachedPointerInfo</span>(V);</td>
       </tr>
       <tr>
         <td id="L3605" class="blob-num js-line-number" data-line-number="3605"></td>
-        <td id="LC3605" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">markInstructionForDeletion</span>(I);</td>
+        <td id="LC3605" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">markInstructionForDeletion</span>(I);</td>
       </tr>
       <tr>
         <td id="L3606" class="blob-num js-line-number" data-line-number="3606"></td>
-        <td id="LC3606" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">    ++NumGVNSimpl;</td>
+        <td id="LC3606" class="blob-code blob-code-inner js-file-line">    ++NumGVNSimpl;</td>
       </tr>
       <tr>
         <td id="L3607" class="blob-num js-line-number" data-line-number="3607"></td>
-        <td id="LC3607" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> <span class="pl-c1">true</span>;</td>
+        <td id="LC3607" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> <span class="pl-c1">true</span>;</td>
       </tr>
       <tr>
         <td id="L3608" class="blob-num js-line-number" data-line-number="3608"></td>
-        <td id="LC3608" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">  }</td>
+        <td id="LC3608" class="blob-code blob-code-inner js-file-line">  }</td>
       </tr>
       <tr>
         <td id="L3609" class="blob-num js-line-number" data-line-number="3609"></td>
-        <td id="LC3609" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">
+        <td id="LC3609" class="blob-code blob-code-inner js-file-line">
 </td>
       </tr>
       <tr>
         <td id="L3610" class="blob-num js-line-number" data-line-number="3610"></td>
-        <td id="LC3610" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span> (LoadInst *LI = dyn_cast&lt;LoadInst&gt;(I)) {</td>
+        <td id="LC3610" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span> (LoadInst *LI = dyn_cast&lt;LoadInst&gt;(I)) {</td>
       </tr>
       <tr>
         <td id="L3611" class="blob-num js-line-number" data-line-number="3611"></td>
-        <td id="LC3611" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (<span class="pl-c1">processLoad</span>(LI))</td>
+        <td id="LC3611" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (<span class="pl-c1">processLoad</span>(LI))</td>
       </tr>
       <tr>
         <td id="L3612" class="blob-num js-line-number" data-line-number="3612"></td>
-        <td id="LC3612" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">return</span> <span class="pl-c1">true</span>;</td>
+        <td id="LC3612" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">return</span> <span class="pl-c1">true</span>;</td>
       </tr>
       <tr>
         <td id="L3613" class="blob-num js-line-number" data-line-number="3613"></td>
-        <td id="LC3613" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">
+        <td id="LC3613" class="blob-code blob-code-inner js-file-line">
 </td>
       </tr>
       <tr>
         <td id="L3614" class="blob-num js-line-number" data-line-number="3614"></td>
-        <td id="LC3614" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">unsigned</span> Num = VN.<span class="pl-c1">lookup_or_add</span>(LI);</td>
+        <td id="LC3614" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">unsigned</span> Num = VN.<span class="pl-c1">lookup_or_add</span>(LI);</td>
       </tr>
       <tr>
         <td id="L3615" class="blob-num js-line-number" data-line-number="3615"></td>
-        <td id="LC3615" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">addToLeaderTable</span>(Num, LI, LI-&gt;<span class="pl-c1">getParent</span>());</td>
+        <td id="LC3615" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">addToLeaderTable</span>(Num, LI, LI-&gt;<span class="pl-c1">getParent</span>());</td>
       </tr>
       <tr>
         <td id="L3616" class="blob-num js-line-number" data-line-number="3616"></td>
-        <td id="LC3616" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> <span class="pl-c1">false</span>;</td>
+        <td id="LC3616" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> <span class="pl-c1">false</span>;</td>
       </tr>
       <tr>
         <td id="L3617" class="blob-num js-line-number" data-line-number="3617"></td>
-        <td id="LC3617" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">  }</td>
+        <td id="LC3617" class="blob-code blob-code-inner js-file-line">  }</td>
       </tr>
       <tr>
         <td id="L3618" class="blob-num js-line-number" data-line-number="3618"></td>
-        <td id="LC3618" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">
+        <td id="LC3618" class="blob-code blob-code-inner js-file-line">
 </td>
       </tr>
       <tr>
@@ -15923,20 +15923,20 @@
       </tr>
       <tr>
         <td id="L3624" class="blob-num js-line-number" data-line-number="3624"></td>
-        <td id="LC3624" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">
+        <td id="LC3624" class="blob-code blob-code-inner js-file-line">
 </td>
       </tr>
       <tr>
         <td id="L3625" class="blob-num js-line-number" data-line-number="3625"></td>
-        <td id="LC3625" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (isa&lt;Constant&gt;(BI-&gt;<span class="pl-c1">getCondition</span>()))</td>
+        <td id="LC3625" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (isa&lt;Constant&gt;(BI-&gt;<span class="pl-c1">getCondition</span>()))</td>
       </tr>
       <tr>
         <td id="L3626" class="blob-num js-line-number" data-line-number="3626"></td>
-        <td id="LC3626" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">return</span> <span class="pl-c1">processFoldableCondBr</span>(BI);</td>
+        <td id="LC3626" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">return</span> <span class="pl-c1">processFoldableCondBr</span>(BI);</td>
       </tr>
       <tr>
         <td id="L3627" class="blob-num js-line-number" data-line-number="3627"></td>
-        <td id="LC3627" style="background-color: rgb(248, 238, 199);" class="blob-code blob-code-inner js-file-line">
+        <td id="LC3627" class="blob-code blob-code-inner js-file-line">
 </td>
       </tr>
       <tr>
@@ -16282,7 +16282,7 @@
       </tr>
       <tr>
         <td id="L3710" class="blob-num js-line-number" data-line-number="3710"></td>
-        <td id="LC3710" style="background-color: rgb(234, 255, 234);" class="blob-code blob-code-inner js-file-line">
+        <td id="LC3710" style="background-color: rgb(248, 238, 199);" style="background-color: rgb(234, 255, 234);" class="blob-code blob-code-inner js-file-line">
 </td>
       </tr>
       <tr>
